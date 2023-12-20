@@ -1,0 +1,14 @@
+name: Sync upstream
+
+on:
+  schedule:
+    - cron:  '0 */6 * * *'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: gh repo sync --branch nixos-unstable
+        env:
+          GH_TOKEN: ${{ github.token }}
