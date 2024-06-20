@@ -113,8 +113,8 @@
 # nix build .#mesa .#pkgsi686Linux.mesa .#pkgsCross.aarch64-multiplatform.mesa .#pkgsMusl.mesa
 
 let
-  version = "24.1.1";
-  hash = "sha256-ADiCbG9+iNkLTOb3GRkvpYyn3t9O3KoRdM972SDvieo=";
+  version = "24.1.2";
+  hash = "sha256-osWEyNV9O9i6EXkKbprjcT+IId+WwFm3ivsp3Zdcn0U=";
 
   # Release calendar: https://www.mesa3d.org/release-calendar.html
   # Release frequency: https://www.mesa3d.org/releasing.html#schedule
